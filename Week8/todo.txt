@@ -1,0 +1,8 @@
+(A) Implement the Dining Philosophers and Reader Writer Problem of Synchronization (test drive the codes discussed in the class).
+(B) Choose any 2 of the following problems whose details are available in the Downy Book on Semaphores ( attached) and implement semaphores based solutions to the same. 
+
+(1) Santa Claus Problem
+(2) H2O Problem
+(3) Baboon Crossing Problem
+(4) Dining Hall Problem
+(5) Senate Bus Problem

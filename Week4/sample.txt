@@ -1,0 +1,1 @@
+Sir, I had a doubt in the 3rd question in the fork assignment. We are asked to count the maximum number of processes that can be created using the fork call. In this, if we keep creating processes using fork() in a while loop and increment a counter and wait for the pid = -1 condition to exit the loop, the system crashes. Is there another way we are supposed to do this.

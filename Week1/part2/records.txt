@@ -1,0 +1,6 @@
+Name 	RollNo 		Gender
+Adhesh	COE18B001	Male
+Mukesh	CED15I002	Male
+Akshun	COE18B003	Male
+Amy		COE90Z009	Female
+Aparajith		COE18B005	Male

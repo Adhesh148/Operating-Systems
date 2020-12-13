@@ -1,0 +1,196 @@
+ls- a
+ls
+!2
+!6
+exit
+!8
+ls
+exit
+clear
+ls
+touch a
+cat a
+ls
+ls
+exit
+ls
+ls -a
+clear
+clear
+clear
+help
+ls
+cd
+pws
+pwd
+exit
+!2
+!4
+!99
+clear
+clear -V
+clear 
+clear
+exit
+ls
+pwd
+mkdir ab
+cd ab
+pwd
+clear
+clear -T
+clear -a
+ls
+ls 
+ls -a
+ls
+ls
+ls
+ls 
+ls a
+ls -h
+ls -al
+clear
+exit
+ls
+ls -a
+ls -al
+cat sample.txt
+ls
+ls -a
+ls -f
+pwd
+cd ..
+ls
+pwd
+!2
+ls
+pwd
+ls
+cat sample.txt
+ls
+!2
+!5
+ls
+ls
+!3
+!9
+!8
+!8
+ls
+ls -f
+ls -d
+ls -al
+pwd
+ls
+sudo
+sudo su
+exit
+cd ~
+cd -
+cd .
+pwd
+cd
+cd 
+cd .
+pwd
+cd ~
+ls
+ls -l
+ls 
+ls
+ls -d
+ls -f
+exit
+cd ~
+exit
+ls
+cd ~
+ls
+ls 
+ls -l
+exit
+
+! 3
+!2
+ls
+cd
+ls
+
+
+
+
+ls
+clear
+ls
+quit
+ls
+cd ../
+ls
+ls
+ls
+cd ../
+ls
+ls - l
+ls -al
+ls -a
+ls
+cd ..
+ls
+pwd
+ls -al
+!2
+!4
+!5
+exit
+ls
+pwd
+cd ../
+pwd
+!12
+clear
+!12
+!3
+clear
+clear -x
+lsd
+hjhdas
+clear
+clear -x
+pwd
+ls -l
+cd Command\ Shell/
+cd Command\Shell
+cd Command\Shell
+cd Command\ Shell/
+exit
+mkdir newfolder
+ls -d
+clear
+clear -x
+mkdir newfolder
+ls -d */
+ls -l
+ls -al
+ls
+clear -x
+ls
+ls -l
+ls -al
+llll
+ls
+ls
+clear -x
+ls
+ls
+clear
+ls
+exit
+ls
+pwd
+exit
+cat sample.txt
+echo "Hello"
+rm sample.txt
+ls -l
+exit

@@ -1,0 +1,238 @@
+
+2. Create a directory and create a file inside that directory.
+
+command: 
+	mkdir sample_folder
+	cd sample_folder
+	touch newfile
+
+3. List the files and directories that are empty in a working directory.
+
+command:
+	find -empty
+
+
+4. Show commands to delete empty and non-empty directory.
+
+command:
+	find -empty | xargs rm -r
+	delete empty folders (with empty files):
+		find -empty -delete
+
+5. Find the location of the input files using locate and find command.
+
+command:
+	Note: refresh locate table: sudo updatedb
+	* locate input.txt
+		-i -> ignore case
+		-c -> give count
+	* find /home/adheshreghu/Documents -name filename.txt
+		-iname -> ignore case
+		find /home/adheshreghu/Documents -type d -name 'Week1' -> search of directories of name 'Week1'
+
+6. View the user permissions and ownership of the files in the current directory and change the ownership of some selected files to another user.
+
+command:
+	*ls -l
+	● d – Display user identity
+	● chmod – Change a file's mode
+	● umask – Set the default file permissions
+	● su – Run a shell as another user
+	● sudo – Execute a command as another user
+	● chown – Change a file's owner
+
+	*change ownership -> sudo chown root file1.txt file2.txt
+
+7. List all the files in the current directory and subdirectories.
+
+command:
+	* ls -R
+
+8. Concatenate the two input files: “sample1.txt” and “sample2.txt” and save it to a new file named “Input”.
+
+command:
+	* cat sample1.txt sample2.txt > Input
+
+9. Copy the contents of file ‘sample2.txt’ to ‘sample.txt’
+
+command:
+	* cp sample2.txt sample.txt
+
+10. Append the file contents of input file ‘sample2.txt’ to the end of the first input file ‘sample1.txt’
+
+command:
+	---
+
+11. Remove the permission for the users to read, write and execute the file ‘sample.txt’.
+
+command:
+	sudo chmod u= sample1.txt 
+
+12. Display the current date with the day of week, month, time and the year.	
+
+command:
+	date
+
+13. Show the calendar of previous, current and next month.
+	
+command:
+	cal -3
+
+14. Sort the contents of the file ‘sample1.txt’ in alphabetical order.
+
+command:
+	sort sample1.txt
+
+15. Erase duplicate records in the file ‘sample1.txt’ and display only the unique records
+
+command: 
+	
+16. Add line numbers to the file ‘sample2.txt’
+
+
+17. Find out whether the two pairs of input files are identical or not.
+
+command: 
+	* diff sample1.txt sample2.txt
+	* diff sample2.txt sample1.txt
+
+18. Show how the input file “sample1.txt” differs line by line from “sample2.txt” in context and unified mode.
+
+command: 
+	* diff -c sample1.txt sample2.txt
+	* diff -u sample2.txt sample1.txt
+
+19. Solve the arithmetic expression: ((8+12)*(5-3))/2 using linux commands.
+
+command:
+	* NUM=$((((8+12)*(5-3))/2))
+	* echo $NUM
+
+20. Cut and display the first 10 characters of every line of the file “Input.txt”.
+
+
+21. Print the name of the current working directory.
+
+command:
+	* pwd
+
+22. Process Status
+	a. List all the running processes with their corresponding PIDs.
+	b. List the processes that are not associated with the terminal.
+	c. List the processes that are associated with the terminal.
+
+command:
+	a. * ps
+	b. * ps T
+	c. * ps a
+
+23. Print the number of characters, number of lines and number of words all the given input files.
+
+command:
+	wc sample1.txt
+
+24. Print the length of the longest line from all the input files.
+
+command:
+	wc -L sample1.txt sample2.txt
+
+25. Move the contents of the input file sample.txt to a new file.
+
+command:
+	mv sample.txt newfile.txt
+	
+26. Copy the contents of one directory to another directory.
+
+command:
+	cp -r Linux\ help\ Manuals/ linuxcp/
+
+27. Reverse the lines of the two input files and concatenate the file contents using a single command.
+
+command:
+
+	tac 
+	
+28. Delete all the files with *.txt extension from the working directory using yes command.
+
+command:
+	yes | rm -i *.txt
+
+29. Given the input file “sample1.txt”, print the number of the lines that match the pattern “system”.
+
+command:
+	grep -c "system" sample1.txt
+
+30. Having sample1 file as input, print the matched lines that contain the pattern “Unix” as whole words.
+
+commmand:
+	grep -h "Unix" sample1.txt
+
+31. Print the lines from “sample1.txt” that do not match the pattern “OS”.
+
+command:
+	grep -v "OS" sample1.txt
+
+32. Fetch the files that contain the word “OS”, “Operating System”, “Operating Systems” with its respective line number. (Ignore the case).
+
+command:
+	grep -n -e "OS" -e "Operating System" -e "Operating Systems" *
+
+33. Having “sample1.txt” and “core” as the input and pattern respectively, along with the matched line print three lines before and after the pattern match.
+
+command:
+	grep -A 3 -B 3 "core" sample1.txt 
+
+34. Find and replace the string “OS” with “Operating System”.
+
+command:
+	sed -i 's/OS/Operating Systems/g' sample1.txt
+	
+35. List only the text files in the current working directory with its corresponding disk space occupied.
+
+command:
+	ls -lh *.txt
+
+	To print only size and name:
+		ls -al *.txt| awk '{print $5, $9}'
+
+36. Show the last modification time of all the input text files.
+
+command:
+	stat *.txt | awk '{if(($1=="Modify:") || ($1 == "File:")) {print}}'
+
+37. Delete the line that has the word “Powerful” from text file “sample2.txt”
+
+command:
+	sed '/powerful/d' sample2.txt
+
+38. Print the roll numbers that end with even numbers in the format (COE18B002) up to COE18B050.	
+	for i in {1..50}
+	do
+		if[$i%2 -eq 0]
+			if[$i -lt 9]
+			then
+				echo "COE18B00$i"
+			else
+				echo "COE18B0$i"
+
+39. Use filter commands like head, tail, more to view the file contents page by page.
+
+command:
+	
+40. Compress the current working directory contents to a tar file and extract those files from the compressed tar file.
+
+command:
+	ls | xargs tar -czvf compress.tar.gz   - works only if none of the files/folders contain space in their name
+
+	OR
+
+	cd .. 
+	tar -czvf c.tar.gz Week2/.
+
+	Uncompress
+
+41. 
+
+
+
+------------------------------------------------------------

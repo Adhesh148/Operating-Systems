@@ -1,0 +1,14 @@
+(1) Simulate the Producer Consumer code discsd in the class. don't get into lockiing and all... 
+producer side--- generation of student name and roll  no --- array of student records (minimum 2 attributes student_name and student_rollNo)
+consumer side--- 
+(2) impement the  petersons algo
+ or (2) extend the p-c simulation in (1) to sync access of ciritical data using Petersons algo.
+(3)
+use mutex locking and unlocking      
+dictionary problem
+word--- meaning 1, meaning 2
+creating the dictionary.. producer
+search for a word in the dictionary... consumer
+extra credit--- avoid duplication in the dictionary
+(4)
+dijsktra's critical section problem

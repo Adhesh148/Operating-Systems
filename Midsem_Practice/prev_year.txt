@@ -1,0 +1,29 @@
+(1)		Develop a Multithreaded Version of Radix Sort algorithm and compare it with the performance (execution time) of bubble and insertion sort algorithms. The demonstration should display the passes of the respective sorting strategies.
+
+(2)    Develop a Multithreaded Version of Counting Sort algorithm and compare it with the performance (execution time) of bubble and insertion sort algorithms. The demo must display the passes of the respective sorting strategies.
+
+(3)    Develop a multithreaded version of Fibonacci Search and compare it with the performance of its equivalent binary search in terms of number of comparisons for large sized inputs and varied search keys. The demonstration must display the passes of the search strategies.
+
+(4)     Develop a multithreaded version of Exponential Search and compare it with the performance of its equivalent binary search in terms of number of comparisons for large sized inputs and varied search keys. The demonstration must display the passes of the search strategies.
+
+(5)    Develop a multithreaded version WORD package that computes the (i) longest word & its length(s) (ii) shortest word and its lengths(s) (iii) average word length (iv) identify the palindromes in the text document.   
+
+(6)    Develop a Matrix Package that computes the (i) determinant value (ii) transpose (iii) inverse (iv) magic square checking of a square matrix in a multithreaded fashion. Compare their performance with their equivalent serial implementations.
+
+(7)    Develop a multithreaded version of Interpolation Search and compare it with the performance of its equivalent binary search in terms of number of comparisons for large sized inputs and varied search keys. The demonstration must display the passes of the search strategies.
+
+(8)    Develop three binaries named (./fibseries, ./primeseries,./perfectseries [perfect numbers]) and schedule these three binaries in (i) FCFS (ii) Round Robin fashion using a pthread library support.  Additional credits would be given for testing with another Premptive and Non premptive algorithm developed as part of the lab exercises.
+
+
+Dear ADHESH REGHU KUMAR,
+Question: Develop a Multithreaded Version of Counting Sort algorithm and 
+compare it with the performance (execution time) of bubble and insertion 
+sort algorithms. The demo must display the passes of the respective sorting 
+strategies. The comparison is against the MT Counting Sort with sequential 
+versions of Bubble and Insertion Sort Algorithm. Ensure that the testing 
+explores large sized arrays, random distribution of elements. As an add on 
+it would be preferred to have a data creator code which initializes an 
+array of user required size randomly given some boundary conditions. Once 
+done with the basic comparison, you may carry out a comparison in terms of 
+varying number of threads and its impact on the efficiency of the 
+parallelization.
